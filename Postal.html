@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ship It</title>
+    <link rel="icon" href="favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <style>
+        .loger{
+            margin-bottom: 25%;
+            width: 450px;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+        .companyName{
+            font-family: cursive;
+            margin-right: 70px;
+        }
+        .central{
+            text-align: center;
+            color: white;
+            background-color: black;
+            padding: 8px;
+            font-size: 18px;
+        }
+        .we{
+            background-color: rgb(243, 156, 156,0.5);
+            padding: 5px;
+        }
+        table{
+            border: solid black 2px;
+            font-size: 25px;
+            width: 70%;
+        }
+        h2{
+            font-family: cursive;
+            color: brown;
+            font-weight: bold;
+        }
+        .specialBTN {
+            width: 80%;
+        }
+        
+    </style>
+    <script>
+        function sprice() {
+            
+            document.getElementById("Hello").innerHTML="<h3>450.00</h3>";
+        }
+        function order(){
+            x = document.getElementById("fname").value;
+            y = document.getElementById("lname").value;
+            z = document.getElementById("address").value;
+            a = document.getElementById("contact").value;
+            b = document.getElementById("daddress").value;
+            if(x == "" || y == "" || z == "" || a == "" || b == ""){
+                alert("Please Enter All required Field");
+                return;
+            }
+            alert("Your Order Confirmed Successfully!")
+        }
+    </script>
+  </head>
+
+  <body>
+   
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-2 companyName border p-3" href="index.html" >Ship It</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active companyName fs-4" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link companyName fs-4" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link companyName fs-4" href="FAQs.html">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <hr>
+      <div class="container we">
+         <h1> Postal Service</h1>
+      </div>
+      <hr>
+
+      <div class="container my-5">
+      <div class="row featurette d-flex justify-content-center align-items-center">
+        <div class="col-md-7 order-md-2">
+          <h2 >We Deliver Your Courier Fastly and Safely </h2>
+          <br><h3> We Offer You Best Service at Lowest Cost</h3>
+          <br>
+          <h2>Our Price</h2>
+
+          <p class="lead"><table>
+            <tr>
+                <th>
+                    Weight
+                </th>
+                <th>
+                    Price
+                </th>
+            </tr>
+            <tr>
+                <td>< 1KG</td>
+                <td>Rs. 150</td>
+            </tr>
+            <tr>
+                <td>1KG - 3KG</td>
+                <td>Rs. 250</td>
+            </tr>
+            <tr>
+                <td>3KG - 6KG</td>
+                <td>Rs. 350</td>
+            </tr>
+            <tr>
+                <td>6KG - 10KG </td>
+                <td>Rs. 400</td>
+            </tr>
+          </table></p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img src="postal-1.jpg" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+          
+        </div>
+      </div>
+    </div>
+    <div class="container my-5">
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7">
+                <h2>Request For Service </h2>
+                <hr>
+                <form action="">
+                    <div class="input-group">
+                        <span class="input-group-text">First & Last Name</span>
+                        <input type="text" aria-label="First name" class="form-control" id="fname">
+                        <input type="text" aria-label="Last name" class="form-control" id="lname">
+                    </div>
+                    <div class="input-group input-group-lg my-2">
+                        <span class="input-group-text" id="inputGroup-sizing-lg">Your Address</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-lg" id="address">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Contact Number</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="contact">
+                      </div>
+                      
+                    <div class="input-group mb-3">
+                        <select class="form-select" id="inputGroupSelect02">
+                            <option selected>Choose City...</option>
+                            <option value="1">Lucknow</option>
+                            <option value="2">Hydrabad</option>
+                            <option value="3">Banglore</option>
+                            <option value="3">Chennai</option>
+                            <option value="3">Jammu</option>
+                            <option value="3">Delhi</option>
+                            <option value="3">Patna</option>
+                        </select>
+                        <label class="input-group-text" for="inputGroupSelect02">Ship It</label>
+                    </div>
+                    <div class="input-group input-group-lg my-2">
+                        <span class="input-group-text" id="inputGroup-sizing-lg">Delivey Address</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-lg" id="daddress">
+                    </div>
+                    <div class="input-group mb-3">
+                        <select class="form-select" id="inputGroupSelect02">
+                            <option selected>Choose Item to Ship...</option>
+                            <option value="1">Clothing</option>
+                            <option value="2">Shoes</option>
+                            <option value="3">Small Consumer Item</option>
+                            <option value="3">Food It</option>
+                            <option value="3">Books</option>
+    
+                        </select>
+                        <label class="input-group-text" for="inputGroupSelect02">Ship It</label>
+                    </div>
+                    <div class="input-group mb-3">
+                        <select class="form-select" id="inputGroupSelect02">
+                            <option selected>Choose from...</option>
+                            <option value="1">> 1KG</option>
+                            <option value="2">1KG - 3KG</option>
+                            <option value="3">3KG - 6KG</option>
+                            <option value="3">> 6KG</option>
+    
+                        </select>
+                        <label class="input-group-text" for="inputGroupSelect02">Weight</label>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default"><button type="button"
+                                class="btn btn-outline-success " onclick="sprice()"> Click to Calculate Charge</button></span>
+                        <span class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default" id="Hello"></span>
+                    </div>
+                    <button type="button" class="btn btn-outline-success specialBTN mx-5" onclick="order()">Click It To Ship It</button>
+                </form>
+                
+            </div>
+            <div class="col-md-5">
+                <img src="posta-2.jpg" alt=""
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500">
+
+            </div>
+        </div>
+    </div>
+
+      <footer class="container-fluid central">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>© 2023-2024 Ship It, Inc. · All Right Reserved With Us</p>
+    </footer>
+
+    </body>
+    </html>
